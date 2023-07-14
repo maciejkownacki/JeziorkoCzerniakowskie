@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mapazmian">
+    package="com.kownikdevhub.jeziorkoczerniakowskie">
    <application
         android:label="mapazmian"
         android:name="${applicationName}"
@@ -9,7 +9,7 @@
            android:value="AIzaSyDvslDsG4NjNnE5Mf4sK9Myjl42Ohp35cQ"
            />
         <activity
-            android:name=".MainActivity"
+            android:name="com.kownikdevhub.jeziorkoczerniakowskie.MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
             android:theme="@style/LaunchTheme"
