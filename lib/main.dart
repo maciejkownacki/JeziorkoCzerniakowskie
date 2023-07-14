@@ -1,11 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:mapazmian/NavBar.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
+
 
 void main() {
   runApp(const MyApp());
 }
+class SplashScreen extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    Future.delayed(Duration(seconds: 2), () {
+      Navigator.pushReplacementNamed(context, '/home');
+    });
 
+    return Scaffold(
+      body: Center(
+        child: Image.asset(
+          'assets/images/splash.png',
+          fit: BoxFit.contain,
+          height: 200,
+          width: 400,
+        ),
+      ),
+    );
+  }
+}
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
