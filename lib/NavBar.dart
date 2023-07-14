@@ -20,7 +20,7 @@ class NavBar extends StatelessWidget {
         children: [
           UserAccountsDrawerHeader(
             accountName: Text('Jeziorko Czerniakowskie'),
-            accountEmail: Text('maciej.kownacki@pwsbia.edu.pl'),
+            accountEmail: Text(''),
             currentAccountPicture: CircleAvatar(
               child: ClipOval(
                 child: Image.asset(
