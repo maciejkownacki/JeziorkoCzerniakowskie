@@ -45,6 +45,8 @@
 		<false/>
 		<key>CADisableMinimumFrameDurationOnPhone</key>
 		<true/>
+		<key>GADApplicationIdentifier</key>
+		<string>ca-app-pub-8539970308562149~7653987790</string>
 		<key>UIStatusBarHidden</key>
 		<false/>
 	</dict>
