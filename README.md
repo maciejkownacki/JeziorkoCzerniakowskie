@@ -9,6 +9,20 @@ Projekt aplikacji mobilnej z wykorzystaniem Fluttera dedykowanej dla Rezerwatu P
 - [Flutter](https://flutter.dev)
 - [Dart](https://dart.dev)
 
+## Funkcje 💡
+Informacje o rezerwacie
+Galeria zdjęć
+Możliwość kontaktu
+Wbudowane reklamy
+
+## Autor ✒️
+Maciej Kownacki
+
+## Licencja 📄
+Ten projekt jest licencjonowany na podstawie licencji MIT - zobacz plik LICENSE.md aby uzyskać szczegóły.
+
+
+
 ## Instalacja 💻
 
 Pobierz projekt:
@@ -30,12 +44,5 @@ Uruchom aplikację:
 bash
 Copy code
 flutter run
-## Funkcje 💡
-Informacje o rezerwacie
-Galeria zdjęć
-Możliwość kontaktu
-Wbudowane reklamy
-## Autorzy ✒️
-Twoje Imię i Nazwisko
-## Licencja 📄
-Ten projekt jest licencjonowany na podstawie licencji MIT - zobacz plik LICENSE.md aby uzyskać szczegóły.
+
+
