@@ -1,6 +1,8 @@
 # Jeziorko Czerniakowskie 🏞️
 
-![Image](https://link-do-obrazka)
+![Google Banner Ads Half-page ad (300x600)](https://github.com/maciejkownacki/JeziorkoCzerniakowskie/assets/97414660/6de8ad32-6d7a-4e20-8ed0-f29f58fd863f)
+
+
 
 Projekt aplikacji mobilnej z wykorzystaniem Fluttera dedykowanej dla Rezerwatu Przyrody Jeziorko Czerniakowskie. Aplikacja zawiera informacje o ogólnej charakterystyce, historii, faunie i florze rezerwatu, a także możliwościach rekreacji.
 
@@ -26,23 +28,18 @@ Ten projekt jest licencjonowany na podstawie licencji MIT - zobacz plik LICENSE.
 ## Instalacja 💻
 
 Pobierz projekt:
-
-```bash
 git clone https://github.com/twoj-user/Jeziorko-Czerniakowskie.git
+
+
 Wejdź do katalogu projektu:
-
-bash
-Copy code
 cd Jeziorko-Czerniakowskie
+
+
 Zainstaluj zależności:
-
-bash
-Copy code
 flutter pub get
-Uruchom aplikację:
 
-bash
-Copy code
+
+Uruchom aplikację:
 flutter run
 
 
