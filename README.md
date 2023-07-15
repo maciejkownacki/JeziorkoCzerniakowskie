@@ -1,6 +1,7 @@
 # Jeziorko Czerniakowskie 🏞️
 
-![Google Banner Ads Half-page ad (300x600)](https://github.com/maciejkownacki/JeziorkoCzerniakowskie/assets/97414660/6de8ad32-6d7a-4e20-8ed0-f29f58fd863f) ![2Google Banner Ads Half-page ad (300x600)](https://github.com/maciejkownacki/JeziorkoCzerniakowskie/assets/97414660/9b47d254-88f0-4a51-a083-017d4205bc30) 
+![Google Banner Ads Half-page ad (300x600)](https://github.com/maciejkownacki/JeziorkoCzerniakowskie/assets/97414660/6de8ad32-6d7a-4e20-8ed0-f29f58fd863f) ![2Google Banner Ads Half-page ad (300x600)](https://github.com/maciejkownacki/JeziorkoCzerniakowskie/assets/97414660/9b47d254-88f0-4a51-a083-017d4205bc30) ![3Google Banner Ads Half-page ad (300x600)](https://github.com/maciejkownacki/JeziorkoCzerniakowskie/assets/97414660/0d365b9b-e874-43ee-bb0d-8678e8e1f9e3)
+
 
 
 
