@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:mapazmian/ad_mob_service.dart';
+
 
 class StronaHistoria extends StatelessWidget {
   const StronaHistoria({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // Przenieśmy tworzenie BannerAd do metody build
+    BannerAd myBanner = BannerAd(
+      adUnitId: AdMobService.getBannerAdUnitId('strona2_historia'),
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(),
+    );
+
+    myBanner.load();
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Historia'),
@@ -12,7 +25,11 @@ class StronaHistoria extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-
+            Container(
+              child: AdWidget(ad: myBanner),
+              width: myBanner.size.width.toDouble(),
+              height: myBanner.size.height.toDouble(),
+            ),
             Text(''),
             Text('Przed 4000 pne – cześć koryta wisly'),
             Text(''),

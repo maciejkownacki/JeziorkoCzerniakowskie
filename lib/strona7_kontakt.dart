@@ -1,10 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:mapazmian/ad_mob_service.dart';
+
 
 class StronaKontakt extends StatelessWidget {
   const StronaKontakt({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // Przenieśmy tworzenie BannerAd do metody build
+    BannerAd myBanner = BannerAd(
+      adUnitId: AdMobService.getBannerAdUnitId('strona7_kontakt'),
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(),
+    );
+
+    myBanner.load();
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Kontakt'),
@@ -12,6 +25,12 @@ class StronaKontakt extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+
+            Container(
+              child: AdWidget(ad: myBanner),
+              width: myBanner.size.width.toDouble(),
+              height: myBanner.size.height.toDouble(),
+            ),
             Padding(
               padding: EdgeInsets.symmetric(vertical: 16.0),
               child: Image.asset(
@@ -60,6 +79,7 @@ class StronaKontakt extends StatelessWidget {
                 'assets/images/KontaktObrazek4.png',
               ),
             ),
+
           ],
         ),
       ),

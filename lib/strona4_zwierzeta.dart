@@ -1,17 +1,32 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:mapazmian/ad_mob_service.dart';
 
 class StronaZwierzeta extends StatelessWidget {
   const StronaZwierzeta({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    // Przenieśmy tworzenie BannerAd do metody build
+    BannerAd myBanner = BannerAd(
+      adUnitId: AdMobService.getBannerAdUnitId('strona3_zwierzeta'),
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(),
+    );
+
+    myBanner.load();
+
     return Scaffold(
       appBar: AppBar(
         title: Text('Zwierzeta'),
       ),
       body: SingleChildScrollView(
         child: Column(
-          children: [
-
+          children: [Container(
+            child: AdWidget(ad: myBanner),
+            width: myBanner.size.width.toDouble(),
+            height: myBanner.size.height.toDouble(),
+          ),
 
 
 
@@ -557,8 +572,6 @@ class StronaZwierzeta extends StatelessWidget {
             ),
             Text('Gatunek węża z rodziny połozowatych, zwykle o brunatnej lub szarej skórze z ciemnymi plamami. Zaskronce żyją w lasach i na łąkach.'),
             Divider(),
-
-
 
 
 

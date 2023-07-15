@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void initState() {
     super.initState();
     _bannerAd = BannerAd(
-      adUnitId: AdMobService.bannerAdUnitId!,
+      adUnitId: AdMobService.getBannerAdUnitId('strona6_galeria'),
       size: AdSize.banner,
       request: const AdRequest(),
       listener: BannerAdListener(),

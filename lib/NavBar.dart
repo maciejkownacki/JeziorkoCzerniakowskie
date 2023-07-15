@@ -6,6 +6,7 @@ import 'strona4_zwierzeta.dart';
 import 'strona5_rekreacja.dart';
 import 'strona6_galeria.dart';
 import 'strona7_kontakt.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
 
 
 

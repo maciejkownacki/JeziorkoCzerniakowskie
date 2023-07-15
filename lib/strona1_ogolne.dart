@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:mapazmian/ad_mob_service.dart';
 
 class StronaOgolne extends StatelessWidget {
   const StronaOgolne({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    // Przenieśmy tworzenie BannerAd do metody build
+    BannerAd myBanner = BannerAd(
+      adUnitId: AdMobService.getBannerAdUnitId('strona1_ogolne'),
+      size: AdSize.banner,
+      request: AdRequest(),
+      listener: BannerAdListener(),
+    );
+
+    myBanner.load();
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Ogólne'),
@@ -12,6 +24,11 @@ class StronaOgolne extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            Container(
+              child: AdWidget(ad: myBanner),
+              width: myBanner.size.width.toDouble(),
+              height: myBanner.size.height.toDouble(),
+            ),
             Image.asset('assets/images/JezioroScan.png'),
             SizedBox(height: 10),
             Text(
@@ -101,6 +118,7 @@ class StronaOgolne extends StatelessWidget {
               ),
             ),
             Text('Miasto Stołeczne Warszawa'),
+
 
           ],
         ),
